@@ -74,10 +74,6 @@ li {
     width: fit-content;
 }
 
-.visualitty-hidden {
-    visibility: hidden;
-}
-
 .upper-menu__link-burger {
     background: url("img/burger.svg") no-repeat 50% 50%;
 }
@@ -100,6 +96,10 @@ li {
 
 .upper-menu__link-search {
     background: url("img/search.svg") no-repeat 50% 50%;
+}
+
+.visualitty-hidden {
+    visibility: hidden;
 }
 
 .upper-menu__item--hidden {
