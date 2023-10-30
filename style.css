@@ -123,7 +123,7 @@ li {
 }
 
 .main-header__tilte {
-    margin: 0 -16px;
+    position: relative;
     font-family: 'TT Lakes', sans-serif;
     font-size: 28px;
     font-weight: bold;
@@ -132,10 +132,13 @@ li {
 
 .main-header__tilte::before {
     content: "";
-    border-left: 4px solid #41F6D7;
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    left: -16px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-right: 12px;
 }
 
 .main-header__link-settings {
@@ -245,13 +248,18 @@ li {
 
     .main {
         gap: 32px;
+        padding: 24px;
+    }
+
+    .main-header__tilte::before {
+        left: -24px;
     }
 
     .about__content {
         display: flex;
         flex-direction: row;
         gap: 64px;
-        padding: 25px;
+        padding-right: 25px;
     }
 
     .about__full-text {
@@ -299,9 +307,9 @@ li {
         display: flex;
         justify-content: space-between;
     }
-
-    .main-header__tilte {
-        padding-left: 32px;
+    
+    .main-header__tilte::before {
+        left: -32px;
     }
 
     .main-header__menu {
@@ -326,10 +334,6 @@ li {
     .main {
         gap: 20px;
         padding: 42px 32px;
-    }
-
-    .main-header__tilte {
-        margin-left: -32px;
     }
 
     .about__content {
